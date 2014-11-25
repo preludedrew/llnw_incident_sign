@@ -14,7 +14,7 @@ data = json.load(json_data)
 os.system("killall llnw-led")
 
 # Open the new process with the given arguments
-cmd = "/opt/llnw_led/llnw-led -s {0} -m {1}".format(data["days_since"], data["max_days"])
+cmd = "/opt/llnw/bin/llnw-led -s {0} -m {1}".format(data["days_since"], data["max_days"])
 
 os.system(cmd)
 # Close File
