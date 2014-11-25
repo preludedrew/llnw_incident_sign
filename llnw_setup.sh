@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GIT_CLONE_URL=
+GIT_CLONE_URL="https://github.llnw.net/aboren/llnw_incident_sign.git"
 SCRIPT_LOCATION=/opt/llnw/bin/
 
 SCRIPTS=(
@@ -17,7 +17,7 @@ echo "Installing git"
 sudo apt-get -qy install git
 
 echo "Cloning git project"
-git clone http://github.com/preludedrew/llnw_led.git
+git clone "${GIT_CLONE_URL}"
 
 cd llnw_led/
 
