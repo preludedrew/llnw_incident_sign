@@ -19,7 +19,7 @@ sudo apt-get -qy install git
 echo "Cloning git project"
 git clone "${GIT_CLONE_URL}"
 
-cd llnw_led/
+cd llnw_incident_sign/
 
 
 echo "Running make...."
