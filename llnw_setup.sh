@@ -17,6 +17,8 @@ git clone "${GIT_CLONE_URL}"
 
 cd llnw_incident_sign/
 
+echo "Installing crontab entry...[ $(cat crontab.entry) ]"
+crontab crontab.entry
 
 echo "Running make...."
 make -j2 install
