@@ -1,0 +1,1 @@
+* 2 * * * /usr/bin/python2 /opt/llnw/bin/getjson.py
