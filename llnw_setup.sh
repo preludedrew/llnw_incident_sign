@@ -8,13 +8,9 @@ SCRIPTS=(
 )
 
 if [[ $(id -u) -ne 0 ]]; then
-    echo "Script needs to be ran as sudo or root! - Exiting..."
+    echo "Script needs to be ran as root! - Exiting..."
     exit
 fi
-
-echo "Installing git"
-
-sudo apt-get -qy install git
 
 echo "Cloning git project"
 git clone "${GIT_CLONE_URL}"
