@@ -3,7 +3,6 @@ LLNW_OBJECTS= \
     src/llnw-led.o
 LLNW_BINARY=llnw-led
 LLNW_BIN_LOCATION=/opt/llnw/bin
-LLNW_SCRIPTS=python/getjson.py
 
 
 # Where our library resides. It is split between includes and the binary
@@ -33,5 +32,3 @@ clean:
 install: $(LLNW_BINARY)
 	@echo "Compiling and installing binary to $(LLNW_BIN_LOCATION) ###MUST BE RUN AS ROOT###"
 	install -D $(LLNW_BINARY) $(LLNW_BIN_LOCATION)/$(LLNW_BINARY)
-	cp -f $(LLNW_SCRIPTS) $(LLNW_BIN_LOCATION)
-
